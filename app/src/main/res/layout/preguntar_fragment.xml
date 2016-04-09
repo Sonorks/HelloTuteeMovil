@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutPreguntar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPreguntaArea"
+            android:text="Selecciona el Area."
+            android:layout_gravity="center"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SpinnerArea"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"
+            android:layout_below="@id/textPreguntaArea">
+        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPreguntaAsignatura"
+            android:text="Selecciona la asignatura."
+            android:layout_below="@id/SpinnerArea"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPreguntaAsignatura"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"
+            android:id="@+id/SpinnerAsignatura">
+        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPreguntaTema"
+            android:text="Ingresa el tema."
+            android:layout_below="@id/SpinnerAsignatura"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPreguntaTema"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"
+            android:id="@+id/etTema">
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPregunta"
+            android:text="Ingresa tu pregunta."
+            android:layout_below="@id/etTema"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Pregunta"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@id/textPregunta"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/botonAñadirEvento"
+            android:text="Añadir pregunta"
+            android:layout_below="@id/Pregunta"
+            android:layout_gravity="center"
+            android:onClick="añadirEvento"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+        </LinearLayout>
+
+</LinearLayout>

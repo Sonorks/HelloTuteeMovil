@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">HelloTuteeMovil</string>
+
+    <string name="title_section1">Buzon</string>
+    <string name="title_section2">Preguntar</string>
+    <string name="title_section3">Perfil</string>
+    <string name="title_section4">Recargar cuenta</string>
+    <string name="title_section5">Salir</string>
+    <string name="botonLogeo">Ingresar</string>
+    <string name="hintUsuario">Usuario</string>
+    <string name="botonRegistro">Registrar</string>
+    <string name="hintContraseña">Contraseña</string>
+    <string name="registrar">¿No tienes una cuenta aún?</string>
+    <string name="tituloLogin">Iniciar Sesión</string>
+    <string name="tituloRegistrar">Registrar</string>
+    <string name="txtNombre">Nombres</string>
+    <string name="txtApellido">Apellidos</string>
+    <string name="txtCorreo">Correo</string>
+    <string name="botonRegistrar">Completar Registro</string>
+    <string name="abierto">abierto</string>
+    <string name="cerrado">cerrado</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
