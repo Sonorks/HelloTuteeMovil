@@ -112,16 +112,21 @@ public class dataBaseManager {
         return dbLogin.query(tableNameLogin, columnas2, null, null, null, null, null);
 
     }
-    public boolean buscarUsuarioCursor(String nombre,String contraseña) {
+    public Cursor cargarCursorUsuario(String username) {
+        String[] columnas = new String[]{cn_id,cn_name,cn_password,cn_email,cn_user,cn_perfil};
+
+        return db.query(tableName, columnas,cn_user+"=?", new String[]{username}, null, null, null);
+
+    }
+    public boolean buscarUsuarioCursor(String user,String contraseña) {
         String password="";
         String[] columnas;
-        String query = "Select name,password from "+tableName;
-        columnas = new String[]{cn_id,cn_name,cn_password,cn_email};
-        Cursor c = db.query(tableName, columnas, cn_name + "=?", new String[]{nombre}, null, null, null);
+        columnas = new String[]{cn_id,cn_name,cn_password,cn_email,cn_user,cn_perfil};
+        Cursor c = db.query(tableName, columnas, cn_user + "=?", new String[]{user}, null, null, null);
         if(c.moveToFirst()){
             do{
-                String a = c.getString(1);
-                if (a.equals(nombre)){
+                String a = c.getString(4);
+                if (a.equals(user)){
                     password = c.getString(2);
                 }
             }

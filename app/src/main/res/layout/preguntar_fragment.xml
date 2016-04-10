@@ -72,11 +72,10 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/botonAñadirEvento"
+            android:id="@+id/botonAñadirPregunta"
             android:text="Añadir pregunta"
             android:layout_below="@id/Pregunta"
             android:layout_gravity="center"
-            android:onClick="añadirEvento"
             android:layout_marginTop="@dimen/activity_vertical_margin"/>
         </LinearLayout>
 
